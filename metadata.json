@@ -1,0 +1,7 @@
+{
+  "name": "Harsha Portfolio",
+  "description": "A premium cinematic visual portfolio blending photography, videography, and storytelling with a bold editorial aesthetic.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
