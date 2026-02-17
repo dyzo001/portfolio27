@@ -7,6 +7,15 @@ interface AboutViewProps {
 }
 
 const AboutView: React.FC<AboutViewProps> = ({ onBack }) => {
+  const skills = [
+    'Adobe Premiere Pro',
+    'Adobe Photoshop',
+    'Adobe Lightroom',
+    'CapCut',
+    'Final Cut Pro',
+    'Canva'
+  ];
+
   return (
     <div className="bg-brand-cream min-h-screen pt-32 pb-24 text-brand-black overflow-x-hidden">
       <div className="container mx-auto px-6">
@@ -90,6 +99,21 @@ const AboutView: React.FC<AboutViewProps> = ({ onBack }) => {
                   <p className="text-brand-black/40 text-sm">Your vision combined with my expertise creates something truly unique.</p>
                 </div>
               </div>
+            </div>
+          </div>
+
+          {/* Skills Section */}
+          <div className="border-t border-brand-black/10 pt-16">
+            <h2 className="text-7xl md:text-[12rem] font-display font-black uppercase mb-16 tracking-tighter leading-none">Skills</h2>
+            <div className="flex flex-wrap gap-x-12 gap-y-8">
+              {skills.map((skill) => (
+                <div key={skill} className="flex items-center gap-4 group cursor-default">
+                  <div className="w-2 h-2 bg-brand-mustard rounded-full group-hover:scale-150 transition-transform" />
+                  <span className="text-2xl md:text-5xl font-display font-black uppercase tracking-tighter text-brand-black/80 hover:text-brand-black hover:tracking-normal transition-all duration-300">
+                    {skill}
+                  </span>
+                </div>
+              ))}
             </div>
           </div>
 
