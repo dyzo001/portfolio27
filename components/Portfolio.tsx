@@ -11,23 +11,23 @@ const Portfolio: React.FC<PortfolioProps> = ({ onViewAll, onSelectProject }) => 
   const projects: ProjectData[] = [
     { 
       id: 1, 
-      title: 'FIRE', 
-      category: 'Photography', 
-      image: 'https://i.ibb.co/sJqptJhx/IMG-20240201-WA0001.jpg', 
+      title: 'EMAIL MARKETING STRATEGY', 
+      category: 'INFOGRAPHICS', 
+      image: 'https://i.ibb.co/7dy6xdLT/Untitled-design.png', 
       size: 'large',
-      client: 'Visual Narratives',
+      client: 'Growth Dynamics',
       year: '2024',
-      description: 'Capturing the raw, untamed energy of light and heat in a single frame. A study of destructive beauty and warmth.'
+      description: 'A comprehensive infographic breakdown of modern email marketing techniques designed to strengthen brand approach and conversion rates.'
     },
     { 
-      id: 2, 
-      title: 'Urban Solitude', 
-      category: 'Film', 
-      image: 'https://i.ibb.co/TMSqsFX5/IMG-20240118-WA0024.jpg', 
+      id: 20, 
+      title: 'USER JOURNEY MAP', 
+      category: 'INFOGRAPHICS', 
+      image: 'https://picsum.photos/seed/journey/800/1000?grayscale', 
       size: 'small',
-      client: 'NIGHTWALKERS',
+      client: 'UX Collective',
       year: '2024',
-      description: 'Capturing the quiet, reflective moments of city life when the world goes to sleep.'
+      description: 'Mapping the digital footprint and interaction patterns of modern users in a clean, editorial layout.'
     },
     { 
       id: 3, 
@@ -41,13 +41,13 @@ const Portfolio: React.FC<PortfolioProps> = ({ onViewAll, onSelectProject }) => 
     },
     { 
       id: 4, 
-      title: 'Modern Echoes', 
-      category: 'Architecture', 
-      image: 'https://picsum.photos/seed/p4/1000/800?grayscale', 
+      title: 'MINIMALIST SEMINAR', 
+      category: 'FLYER', 
+      image: 'https://i.ibb.co/hFC7GNXj/55.png', 
       size: 'medium',
-      client: 'Studio Alpha',
-      year: '2022',
-      description: 'Documenting the brutalist influences in contemporary residential design.'
+      client: 'Design Hub',
+      year: '2024',
+      description: 'A striking minimalist flyer for a creative seminar, focusing on bold typography and structured layout.'
     },
     { 
       id: 5, 
@@ -59,17 +59,7 @@ const Portfolio: React.FC<PortfolioProps> = ({ onViewAll, onSelectProject }) => 
       client: 'VOGUE India',
       year: '2024',
       description: 'A vibrant editorial showcase blending natural landscapes with high-fashion textures.'
-    },
-    { 
-      id: 6, 
-      title: 'Fluid Motion', 
-      category: 'Experimental', 
-      image: 'https://picsum.photos/seed/p6/800/800?grayscale', 
-      size: 'small',
-      client: 'Dance Co.',
-      year: '2023',
-      description: 'Capturing the raw energy and dynamic flow of professional contemporary dancers.'
-    },
+    }
   ];
 
   return (

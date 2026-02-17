@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { ArrowUpRight, Instagram, Facebook } from 'lucide-react';
 import { ViewType } from '../App';
@@ -73,7 +74,7 @@ const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
         <div className="w-full lg:w-1/2 relative opacity-0 animate-fade-in stagger-3">
           <div className="relative group overflow-hidden rounded-bl-[4rem] rounded-br-[4rem] rounded-tl-[1rem] rounded-tr-[1rem] shadow-2xl bg-brand-black aspect-[4/5] md:aspect-[16/9] lg:aspect-[4/5] xl:aspect-[5/6]">
             <img 
-              src="https://i.ibb.co/DD0k580M/harsha.jpg" 
+              src="https://i.ibb.co/8L6yZ321/harsha.jpg" 
               alt="Harsh Chaudhary - Professional Portrait" 
               className="w-full h-full object-cover grayscale brightness-75 group-hover:scale-105 group-hover:grayscale-0 group-hover:brightness-100 transition-all duration-1000"
             />

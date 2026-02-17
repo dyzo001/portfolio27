@@ -16,21 +16,21 @@ const GalleryView: React.FC<GalleryViewProps> = ({ onBack, onSelectProject }) =>
   const allWorks: ProjectData[] = [
     { 
       id: 1, 
-      title: 'FIRE', 
-      category: 'Photography', 
-      image: 'https://i.ibb.co/sJqptJhx/IMG-20240201-WA0001.jpg', 
-      client: 'Visual Narratives', 
+      title: 'EMAIL MARKETING STRATEGY', 
+      category: 'INFOGRAPHICS', 
+      image: 'https://i.ibb.co/7dy6xdLT/Untitled-design.png', 
+      client: 'Growth Dynamics', 
       year: '2024', 
-      description: 'Capturing the raw, untamed energy of light and heat in a single frame. A study of destructive beauty and warmth.' 
+      description: 'A comprehensive infographic breakdown of modern email marketing techniques designed to strengthen brand approach and conversion rates.' 
     },
     { 
       id: 2, 
-      title: 'Urban Solitude', 
-      category: 'Photography', 
-      image: 'https://i.ibb.co/TMSqsFX5/IMG-20240118-WA0024.jpg', 
-      client: 'Independent', 
+      title: 'DIGITAL MARKETING AGENCY', 
+      category: 'FLYER', 
+      image: 'https://i.ibb.co/bjs6ty2c/44.png', 
+      client: 'Creative Minds', 
       year: '2024', 
-      description: 'Exploring city life through a lens of isolation.' 
+      description: 'A professional and clean digital marketing agency flyer designed for high conversion and brand authority.' 
     },
     { 
       id: 3, 
@@ -41,31 +41,100 @@ const GalleryView: React.FC<GalleryViewProps> = ({ onBack, onSelectProject }) =>
       year: '2024', 
       description: 'A promotional flyer for a traditional hands-on Ganesha idol making workshop using sustainable materials.' 
     },
-    { id: 4, title: 'Modern Echoes', category: 'INFOGRAPHICS', image: 'https://picsum.photos/seed/p4/800/1000?grayscale', client: 'Tech Weekly', year: '2022', description: 'Visualizing data with a cinematic edge.' },
-    { id: 5, title: 'Golden Palm', category: 'THUMBNAILS', image: 'https://picsum.photos/seed/p5/800/1000', client: 'Traveler Mag', year: '2024', description: 'Saturated aesthetics for high engagement.' },
-    { id: 6, title: 'Fluid Motion', category: 'Photography', image: 'https://picsum.photos/seed/p6/800/1000?grayscale', client: 'Motion Lab', year: '2023', description: 'High-frame rate experiments.' },
     { 
-      id: 7, 
-      title: 'NATURE', 
-      category: 'Photography', 
-      image: 'https://i.ibb.co/TMSqsFX5/IMG-20240118-WA0024.jpg', 
-      client: 'Nature Collective', 
+      id: 4, 
+      title: 'MINIMALIST SEMINAR', 
+      category: 'FLYER', 
+      image: 'https://i.ibb.co/hFC7GNXj/55.png', 
+      client: 'Design Hub', 
       year: '2024', 
-      description: 'A deep dive into the serene and untamed world of the natural environment.' 
+      description: 'A striking minimalist flyer for a creative seminar, focusing on bold typography and structured layout.' 
     },
-    { id: 8, title: 'Neon Pulse', category: 'Photography', image: 'https://picsum.photos/seed/p8/800/1000?grayscale', client: 'Synth Records', year: '2024', description: 'Visualizers for ambient electronic music.' },
+    { 
+      id: 18, 
+      title: 'KINETIC DATA VIZ', 
+      category: 'INFOGRAPHICS', 
+      image: 'https://picsum.photos/seed/kdata/800/1000?grayscale', 
+      client: 'Tech Insights', 
+      year: '2024', 
+      description: 'A visual analysis of motion and flow within digital ecosystems, translated into a bold infographic format.' 
+    },
+    { 
+      id: 19, 
+      title: 'PROCESS FLOW DESIGN', 
+      category: 'INFOGRAPHICS', 
+      image: 'https://picsum.photos/seed/pflow/800/1000?grayscale', 
+      client: 'Systems Corp', 
+      year: '2024', 
+      description: 'Breaking down complex industrial processes into elegant, digestible visual narratives.' 
+    },
+    { 
+      id: 20, 
+      title: 'USER JOURNEY MAP', 
+      category: 'INFOGRAPHICS', 
+      image: 'https://picsum.photos/seed/journey/800/1000?grayscale', 
+      client: 'UX Collective', 
+      year: '2024', 
+      description: 'Mapping the digital footprint and interaction patterns of modern users in a clean, editorial layout.' 
+    },
+    { 
+      id: 21, 
+      title: 'REVENUE ARCHITECTURE', 
+      category: 'INFOGRAPHICS', 
+      image: 'https://picsum.photos/seed/revenue/800/1000?grayscale', 
+      client: 'Growth Ops', 
+      year: '2024', 
+      description: 'A high-level visual breakdown of complex fiscal structures and growth projections.' 
+    },
+    { 
+      id: 16, 
+      title: 'AURA CREATIVE SUMMIT', 
+      category: 'FLYER', 
+      image: 'https://picsum.photos/seed/aura/800/1000', 
+      client: 'Horizon Events', 
+      year: '2024', 
+      description: 'A premium branding concept for a global creative summit, focusing on high-end typography and spatial balance.' 
+    },
+    { 
+      id: 17, 
+      title: 'URBAN NOIR', 
+      category: 'Photography', 
+      image: 'https://picsum.photos/seed/noir/800/1000?grayscale', 
+      client: 'City Stories', 
+      year: '2023', 
+      description: 'A cinematic exploration of light and shadow in the modern metropolis at night.' 
+    },
+    { id: 5, title: 'Golden Palm', category: 'THUMBNAILS', image: 'https://picsum.photos/seed/p5/800/1000', client: 'Traveler Mag', year: '2024', description: 'Saturated aesthetics for high engagement.' },
     { 
       id: 9, 
-      title: 'CREATIVE EVENT FLYER', 
+      title: 'TEAM MEETING', 
       category: 'FLYER', 
       image: 'https://i.ibb.co/BH4MHshj/flyer-2.png', 
-      client: 'Global Events', 
+      client: 'Corporate Pulse', 
       year: '2024', 
-      description: 'An editorial style flyer designed for premium creative workshops and events.' 
+      description: 'A sleek, modern editorial flyer designed for professional team collaborations and corporate gatherings.' 
     },
     { id: 10, title: 'Stone Silence', category: 'INFOGRAPHICS', image: 'https://picsum.photos/seed/p10/800/1000?grayscale', client: 'Architecture Now', year: '2022', description: 'The history of stone in modernism.' },
     { id: 11, title: 'Silk Shadows', category: 'THUMBNAILS', image: 'https://picsum.photos/seed/p11/800/1000', client: 'Beauty Edit', year: '2024', description: 'Soft focus product photography.' },
     { id: 12, title: 'Glitch Theory', category: 'Photography', image: 'https://picsum.photos/seed/p12/800/1000?grayscale', client: 'Digital Arts', year: '2023', description: 'Embracing errors in the digital workflow.' },
+    { 
+      id: 13, 
+      title: 'VIBE MUSIC FEST', 
+      category: 'FLYER', 
+      image: 'https://picsum.photos/seed/musicfest/800/1000', 
+      client: 'Underground Beats', 
+      year: '2024', 
+      description: 'Dynamic and high-energy promotional design for a boutique electronic music festival.' 
+    },
+    { 
+      id: 15, 
+      title: 'YOGA RETREAT', 
+      category: 'FLYER', 
+      image: 'https://picsum.photos/seed/yoga/800/1000', 
+      client: 'Zen Spaces', 
+      year: '2024', 
+      description: 'Calm and earthy visual design for a high-end wellness and yoga retreat advertisement.' 
+    }
   ];
 
   const filteredWorks = activeFilter === 'All' 
@@ -91,7 +160,7 @@ const GalleryView: React.FC<GalleryViewProps> = ({ onBack, onSelectProject }) =>
               <ArrowLeft size={16} className="group-hover:-translate-x-1 transition-transform" />
               Back to Home
             </button>
-            <h1 className="text-8xl md:text-[10rem] font-display font-black uppercase tracking-tighter leading-[0.8]">
+            <h1 className="text-8xl md:text-[10rem] font-display font-black uppercase tracking-tighter leading-[0.85]">
               Gallery
             </h1>
           </div>

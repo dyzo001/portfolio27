@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Target, Plus } from 'lucide-react';
 
@@ -25,7 +26,7 @@ const About: React.FC = () => {
             {/* Portrait Image */}
             <div className="rounded-[4rem] overflow-hidden bg-brand-mustard aspect-[3/4] shadow-2xl">
               <img 
-                src="https://i.ibb.co/DD0k580M/harsha.jpg" 
+                src="https://i.ibb.co/8L6yZ321/harsha.jpg" 
                 alt="Harsh Chaudhary Portrait" 
                 className="w-full h-full object-cover mix-blend-multiply opacity-90 group-hover:scale-105 transition-transform duration-700"
               />

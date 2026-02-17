@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { ArrowLeft, Target, Plus, Zap, Heart, Camera } from 'lucide-react';
 
@@ -34,7 +35,7 @@ const AboutView: React.FC<AboutViewProps> = ({ onBack }) => {
             <div className="w-full lg:w-1/2 relative">
                <div className="rounded-[4rem] overflow-hidden bg-brand-black aspect-[4/5] relative">
                 <img 
-                  src="https://i.ibb.co/DD0k580M/harsha.jpg" 
+                  src="https://i.ibb.co/8L6yZ321/harsha.jpg" 
                   alt="Harsh Chaudhary Portrait" 
                   className="w-full h-full object-cover grayscale brightness-90 hover:grayscale-0 transition-all duration-1000"
                 />
